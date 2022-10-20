@@ -4,4 +4,4 @@ const wipText = document.getElementById("wip")
 const backButtonLink = document.getElementById("back-btn-a")
 
 wipText.innerHTML = "DEV BUILD"
-backButtonLink.setAttribute("href", "hyxud-devserver.web.app")
+backButtonLink.href = "https://hyxud-devserver.web.app"
