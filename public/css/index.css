@@ -16,9 +16,10 @@
   background-position: 0 50%;
   scroll-snap-type: y mandatory;
   min-height: 100vh;
-  animation-name: app-start;
-  animation-duration: 2s;
   overflow: hidden;
+}
+.app-start {
+  animation: app-start 2s;
 }
 @keyframes app-start {
   from {
@@ -84,7 +85,7 @@
   max-width: 400px;
   width: 95%;
   max-height: 300px;
-  height: 95%;
+  height: fit-content;
   background: rgb(39, 46, 64);
   border-radius: 25px;
   z-index: 200;
@@ -98,9 +99,12 @@
   flex-direction: column;
   text-align: center;
   display: none;
-  animation: sc-warn-start 1s, sc-warn-start-r 1s;
   white-space: nowrap;
   overflow: hidden;
+  padding-bottom: 20px;
+}
+.sc-warn-start {
+  animation: sc-warn-start 1s, sc-warn-start-r 1s;
 }
 #sc-warn-bg {
   width: 100%;
@@ -112,8 +116,11 @@
   top: 0;
   left: 0;
   display: none;
-  animation: sc-warn-startbg 4s;
 
+}
+.sc-warn-bg-start {
+  animation: sc-warn-startbg 4s;
+  
 }
 @keyframes sc-warn-startbg {
   from {
@@ -134,13 +141,9 @@
 @keyframes sc-warn-start-r {
   from {
       width: 0px;
-      height: 0px;
   }
   to {
-    max-width: 95%;
-    width: 400px;
-    height: 300px;
-    max-height: 95%;
+      width: 400px;
   }
 }
 #sc-warn > p > span {
@@ -230,6 +233,10 @@
   background: white;
   display: inline-block;
   margin: 0 10px;
+
+}
+.me-line-start
+{
   animation: me-line-start 2s ease-out;
 }
 @keyframes me-line-start {
@@ -250,6 +257,8 @@
   border-radius: 50%;
   background: rgb(56, 72, 94);
   opacity: 0.5;
+}
+.main-entrance-circle-start {
   animation: main-entrance-circle-start 2s ease-out 0s;
 }
 @keyframes main-entrance-circle-start {
@@ -270,6 +279,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
   user-select: none;
+}
+.main-entrance-start {
   animation-name: main-entrance-start;
   animation-duration: 2s;
 }
@@ -294,7 +305,7 @@
   font-weight: 100;
 }
 
-.main-entrance > div {
+.main-entrance-br {
   display: flex;
   width: 600px;
   position: absolute;
@@ -304,9 +315,11 @@
   justify-content: space-between;
   align-items: center;
   font-size: 150pt;
+  height: 400px;
+}
+.main-entrance-br-start {
   animation: main-entrance-br-start 2s ease-out,
     main-entrance-br-idle 5s ease-in-out 2s infinite alternate-reverse;
-  height: 400px;
 }
 @keyframes main-entrance-start {
   from {
@@ -503,6 +516,33 @@
         border-radius: 15px;
         rotate: 0deg;
     }
+}
+
+[startanim="fade-in"] {
+  opacity: 0;
+  transition: 1s;
+}
+[startanim="fade-in"].is-inViewport{
+  opacity: 1;
+}
+[startanim="scale-up"] {
+  transform: scale(.1);
+  opacity: 0;
+  transition: 1s;
+}
+[startanim="scale-up"].is-inViewport{
+  opacity: 1;
+  transform: scale(1);
+}
+[startanim="fade-up"] {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s;
+}
+[startanim="fade-up"].is-inViewport{
+  opacity: 1;
+  transform: translateY(0px);
+
 }
 @media only screen and (max-width: 950px) {
   .visual2 {

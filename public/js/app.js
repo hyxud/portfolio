@@ -36,6 +36,26 @@ function setupTopbar() {
 
 setupTopbar()
 
+const ObsView = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    });
+});
+const onViewAnimElems = document.querySelectorAll('[startanim]');
+const onStartElems = document.querySelectorAll('[hasstartanimm]');
+
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+onViewAnimElems.forEach(element => {
+    ObsView.observe(element, {});
+});
+onStartElems.forEach(element => {
+    let name = element.classList[0]
+    if (element.classList[0]==undefined) {
+        name = element.id
+    }
+    console.log(name);
+    element.classList.add(name+"-start")
+})
