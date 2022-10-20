@@ -20,9 +20,14 @@
   <body>
     <div>
       <h1>ERROR 404</h1>
-      <a href="https://hyxud.cf" id="back-btn-a"><button id="back-btn">Go Back</button></a>
+      <a id="back-btn-a"><button id="back-btn">Loading...</button></a>
     </div>
-
+    <script>
+      const backButtonLink = document.getElementById("back-btn-a")
+      const backButton = document.getElementById("back-btn")
+      backButtonLink.setAttribute("href", document.origin)
+      backButton.innerHTML = "Go back"
+    </script>
     <script src="js/BS404.js"></script>
   </body>
 </html>
