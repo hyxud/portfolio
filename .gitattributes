@@ -1,2 +1,2 @@
 firebase.json merge=ours
-public/js/branchSpecific.js merge=ours
+public/js/BS*.js merge=ours
