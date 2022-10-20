@@ -1,2 +1,1 @@
-firebase.json merge=ours
-public/js/branchSpecific.js merge=ours
+{firebase.json, js/branchSpecific} merge=ours
