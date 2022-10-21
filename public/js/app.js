@@ -1,9 +1,9 @@
-var sidebarButton = document.getElementById("sidebar-button")
-var sidebar = document.getElementById("sidebar")
-var topbar = document.getElementById("topbar")
-var content = document.getElementById("content")
-var closeNMButton = document.querySelector("#sc-warn > button")
-
+const sidebarButton = document.getElementById("sidebar-button")
+const sidebar = document.getElementById("sidebar")
+const topbar = document.getElementById("topbar")
+const content = document.getElementById("content")
+const closeNMButton = document.querySelector("#sc-warn > button")
+const root = document.querySelector(':root');
 var isSidebarOpened = false
 
 
@@ -60,15 +60,47 @@ function onLoad() {
         }
         element.classList.add(name+"-start")
     })
+    listTextManager()
 }
 
 
 const list = [
     "Web Developer",
     "Software Developer",
-    "Game Developer"
+    "Game Developer",
+    "Freelancer",
+    "3D artist",
+    "Designer"
 ]
 
 function listTextManager() {
-    
+    let text = document.querySelector(".main-entrance-typing")
+    let index = 0
+    let maxIndex = list.length-1
+    let typingSpeed = 1000
+    root.style.setProperty('--typing-speed', typingSpeed+"ms");
+
+    const update = ()=>{
+        root.style.setProperty('--steps', list[index].length);
+        text.style.width = `${list[index].length}ch`
+        text.innerHTML = list[index]
+
+        text.classList.add("typing")
+
+        text.innerHTML = list[index]
+        setTimeout(() => {
+            text.classList.remove("typing")
+            text.classList.add("typing-reverse")
+            setTimeout(() => {
+                text.innerHTML = " "
+                text.classList.remove("typing-reverse")
+                setTimeout(() => {
+                    index = index>=maxIndex ? 0: index+1
+                    update()
+                }, 1000);
+            }, typingSpeed);
+        }, 3000);
+    }
+
+    update()
 }
