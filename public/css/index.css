@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: "Changa", sans-serif;
-}
+
 #app {
   background: rgba(40, 27, 60, 1);
   background: linear-gradient(
@@ -12,12 +7,14 @@
     rgb(39, 46, 64) 50%,
     rgb(0, 0, 0) 100%
   );
+  
   background-size: 100% 200%;
   background-position: 0 50%;
   scroll-snap-type: y mandatory;
   min-height: 100vh;
   overflow: hidden;
 }
+
 .app-start {
   animation: app-start 2s;
 }

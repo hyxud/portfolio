@@ -51,11 +51,13 @@ window.onbeforeunload = function () {
 onViewAnimElems.forEach(element => {
     ObsView.observe(element, {});
 });
-onStartElems.forEach(element => {
-    let name = element.classList[0]
-    if (element.classList[0]==undefined) {
-        name = element.id
-    }
-    console.log(name);
-    element.classList.add(name+"-start")
-})
+
+function onLoad() {
+    onStartElems.forEach(element => {
+        let name = element.classList[0]
+        if (element.classList[0]==undefined) {
+            name = element.id
+        }
+        element.classList.add(name+"-start")
+    })
+}

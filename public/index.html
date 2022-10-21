@@ -9,10 +9,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
     <title>Hyxud</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: "Changa", sans-serif;
+        }
+        .loading-div-text {
+            border-radius: 10px;
+            border: 0 black solid;
+            transition: 500ms;
+        }
+        #loading-div {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9000;
+        }
+
+        
+        .text-loaded-anim {
+            color: rgb(50, 184, 50);
+            border: 3px rgb(47, 255, 54) solid;
+            padding: 10px;
+        }
+        
+    </style>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+    <div id="loading-div"><h1 class="loading-div-text">Loading</h1></div>
+    <script src="js/beforeLoad.js"></script>
+
     <div id="app" hasstartanimm>
         <div id="topbar"></div>
         <div id="sidebar-button"></div>
