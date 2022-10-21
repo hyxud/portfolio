@@ -1,4 +1,4 @@
-console.log("DEV BUILD");
+console.log("DEV VERSION");
 
 const wipText = document.getElementById("wip")
 
