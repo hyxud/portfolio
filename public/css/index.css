@@ -298,22 +298,6 @@
   font-weight: 100;
 }
 
-.main-entrance-br {
-  display: flex;
-  width: 600px;
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  justify-content: space-between;
-  align-items: center;
-  font-size: 150pt;
-  height: 400px;
-}
-.main-entrance-br-start {
-  animation: main-entrance-br-start 2s ease-out,
-    main-entrance-br-idle 5s ease-in-out 2s infinite alternate-reverse;
-}
 @keyframes main-entrance-start {
   from {
     top: 10%;
@@ -322,25 +306,6 @@
   to {
     top: 40%;
     opacity: 1;
-  }
-}
-@keyframes main-entrance-br-start {
-  from {
-    opacity: 0;
-    width: 100px;
-    font-size: 100pt;
-  }
-  to {
-    width: 700px;
-    opacity: 1;
-  }
-}
-@keyframes main-entrance-br-idle {
-  from {
-    width: 650px;
-  }
-  to {
-    width: 700px;
   }
 }
 #content {
