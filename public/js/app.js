@@ -61,3 +61,14 @@ function onLoad() {
         element.classList.add(name+"-start")
     })
 }
+
+
+const list = [
+    "Web Developer",
+    "Software Developer",
+    "Game Developer"
+]
+
+function listTextManager() {
+    
+}
