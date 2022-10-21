@@ -92,14 +92,14 @@ function listTextManager() {
             text.classList.remove("typing")
             text.classList.add("typing-reverse")
             setTimeout(() => {
-                text.innerHTML = " "
+                text.innerHTML = ""
                 text.classList.remove("typing-reverse")
                 setTimeout(() => {
                     index = index>=maxIndex ? 0: index+1
                     update()
                 }, 1000);
-            }, typingSpeed-100);
-        }, 3000);
+            }, typingSpeed);
+        }, 4000);
     }
 
     update()

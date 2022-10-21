@@ -264,7 +264,7 @@
 }
 
 .typing-reverse {
-  animation: typing-reverse var(--typing-speed) steps(var(--steps));
+  animation: typing-reverse var(--typing-speed) steps(var(--steps)) forwards;
 }
 
 .main-entrance-circle {
