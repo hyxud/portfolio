@@ -1,6 +1,6 @@
 console.log("DEV VERSION");
 
-const version = 44
+const version = 45
 const wipText = document.getElementById("wip")
 
 

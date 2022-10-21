@@ -98,7 +98,7 @@ function listTextManager() {
                     index = index>=maxIndex ? 0: index+1
                     update()
                 }, 1000);
-            }, typingSpeed);
+            }, typingSpeed-100);
         }, 3000);
     }
 
