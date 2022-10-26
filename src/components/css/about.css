@@ -1,0 +1,22 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+.about > h1{
+  font-size: 40pt;
+  letter-spacing: 20px;
+}
+.about > h1{
+  letter-spacing: 20px;
+  padding-left: 20px;
+}
+.about > h2{
+  font-weight: 300;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+}

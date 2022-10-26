@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
-import "./css/App.css";
+import "./components/css/App.css";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
