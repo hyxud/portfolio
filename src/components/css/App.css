@@ -4,6 +4,7 @@
   padding: 0;
   color: white;
   font-family: "Changa", sans-serif;
+  user-select: none;
 }
 .App {
   background: rgb(18, 22, 34);
@@ -28,8 +29,15 @@
   left: 0;
   z-index: 9000;
 }
-
-
+.load-anim {
+  animation: loaded 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes loaded {
+  to {
+    opacity: 0;
+  }
+}
 .text-loaded-anim {
   color: rgb(140, 73, 255);
   border: 3px rgb(84, 20, 157) solid;
