@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "hyxud-devserver",
+    "site": "hyxud-reactserver",
     "public": "public",
     "ignore": [
       "firebase.json",

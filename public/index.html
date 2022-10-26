@@ -1,120 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="My Portfolio Site talking about me and what can i do"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa&display=swap"
+      rel="stylesheet"
+    />
     <title>Hyxud</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            color: white;
-            font-family: "Changa", sans-serif;
-        }
-        .loading-div-text {
-            border-radius: 10px;
-            border: 0 black solid;
-            transition: 500ms;
-        }
-        #loading-div {
-            background: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9000;
-        }
-
-        
-        .text-loaded-anim {
-            color: rgb(140, 73, 255);
-            border: 3px rgb(84, 20, 157) solid;
-            padding: 10px;
-        }
-        
-    </style>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <div id="loading-div"><h1 class="loading-div-text">Loading</h1></div>
-    <script src="js/beforeLoad.js"></script>
-
-    <div id="app" hasstartanimm>
-        <div id="topbar"></div>
-        <div id="sidebar-button"></div>
-        <div id="sidebar">
-            work in progress
-        </div>
-        <div id="content">
-            <section name="main">
-                <div class="main-entrance" hasstartanimm>
-                    <h1>Welcome!</h1>
-                    <h2>
-                        <div class="me-line" hasstartanimm></div>
-                        <p>this is me <span>Hyxud</span></p>
-                        <div class="me-line" hasstartanimm></div>
-                    </h2>
-                    <h3 class="main-entrance-typing"></h3>
-                </div>
-                <div class="main-entrance-circle" hasstartanimm></div>
-            </section>
-            <section name="about">
-                <div id="about" startanim="fade-in">
-                    <h1  startanim="scale-up-slow" class="title">Who am I?</h1>
-                    <div class="about-main" startanim="fade-up">
-                        <div class="about-main-text">
-                            <div>
-                                <h1 startanim="fade-up">Hi!</h1>
-                                <h3 startanim="fade-up">I'm Hyxud!</h3><br>
-                            </div>
-                            <p startanim="fade-up">
-                            I'm Fuelled with Passion for <span>Programming</span></span> and <span>Design</span>! I have deep Desire to Improve my work
-                            and deliver the <span>BEST</span> Products to <span>EXCEED Expectations</span>.
-                            </p>
-                        </div>
-                        <div class="about-main-visual">
-                            <h1 class="visual">< / ></h1>
-                            <div class="visual2"></div>
-                            <div class="visual2 smlfst"></div>
-                        </div>
-                    </div>
-                    <h2 class="title" startanim="fade-up">I am a</h2>
-                    <ul startanim="scale-up">
-                        <li>Web Developer</li>
-                        <li>Software Developer</li>
-                        <li>Game Developer</li>
-                        <li>3D Artist</li>
-                        <li>Designer</li>
-                        <li>Freelancer</li>
-                    </ul>
-                </div>
-            </section>
-
-        </div>
-        <h3 id="wip">Work in Progress</h3>
-        <div id="sc-warn" hasstartanimm>
-            <h1>NOTICE</h1>
-            <p>your screen is <span>too small</span><br>it's recommended to use a bigger screen<br>for better experience</p>
-            
-            
-            <button>close</button>
-        </div>
-        <div id="sc-warn-bg" hasstartanimm></div>
-
-    </div>
-    <script src="js/BSindex.js"></script>
-    <script src="js/mobileCheck.js"></script>
-    <script src="js/app.js"></script>
-</body>
-
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
