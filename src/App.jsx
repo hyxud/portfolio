@@ -4,7 +4,7 @@ import Content from "./components/Content";
 import "./components/css/App.css";
 
 function App() {
-  const [loaded, setLoaded] = useState(false);
+  const [, setLoaded] = useState(false);
   const [loadingVisible, setLoadingVisible] = useState(true)
   const loadingDiv = useRef(null)
   var loadStyles = {

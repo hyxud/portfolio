@@ -1,22 +1,52 @@
-.about {
+.left-box {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  padding-left: 40px;
+  width: 50%;
+  background: rgb(24, 30, 47);
+  padding-bottom: 20px;
+  padding-right: 50px;
+  max-width: 700px;
+  border-radius: 0 20px 20px 0;
+  max-height: 1000px;
+}
+.socials {
+  top: 120%;
+  max-width: 200px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  text-align: center;
+  padding: 10px 0;
+  left: 20px;
+  border-radius: 20px;
 }
-.about > h1{
-  font-size: 40pt;
-  letter-spacing: 20px;
+.social-button {
+  background-color: rgb(209, 209, 209);
 }
-.about > h1{
-  letter-spacing: 20px;
-  padding-left: 20px;
+.social-button:hover {
+  background-color: rgb(225,182,131);
 }
-.about > h2{
-  font-weight: 300;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
 
+.about > h2 {
+  font-size: 25pt;
+  font-weight: 200;
+}
+.about > h1 {
+  font-size: 50pt;
+  letter-spacing: 10px;
+  font-weight: 800;
+}
+.about > h3 {
+  font-size: 20pt;
+  font-weight: 100;
+  color: rgb(225,182,131);
+}
+.about > p {
+  font-size: 15pt;
+  font-weight: 100;
+  color: rgb(209, 209, 209);
+}
+.about > p > span {
+  color: rgb(225,182,131);
 }

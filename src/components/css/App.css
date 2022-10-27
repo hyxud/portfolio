@@ -5,6 +5,7 @@
   color: white;
   font-family: "Changa", sans-serif;
   user-select: none;
+  box-sizing: border-box;
 }
 .App {
   background: rgb(18, 22, 34);
