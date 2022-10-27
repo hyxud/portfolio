@@ -4,7 +4,6 @@
     left: 50%;
     display: flex;
     transform: translateX(-50%);
-    min-width: 500px;
     justify-content: space-evenly;
     align-items: center;
     background: rgba(0, 0, 0, 0.296);
